@@ -1,6 +1,7 @@
 .idea
 composer.phar
 /vendor
+.phpunit.result.cache
 
 ###> friendsofphp/php-cs-fixer ###
 /.php-cs-fixer.php
