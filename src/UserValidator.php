@@ -27,7 +27,7 @@ readonly class UserValidator implements Validator
 
     public function validateEmail(string $email): bool
     {
-        return preg_match('/^[\._a-z0-9-]+@[\._a-z0-9-]+$/', strtolower($email));
+        return preg_match('/^[\._a-z0-9-]+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/', strtolower($email));
     }
 
     public function validatePassword(string $password): bool
